@@ -64,7 +64,6 @@ namespace InsaneOne.SaveSystem
 			ResetWorldState();
 		}
 		
-		
 		public static Saveable[] GetSaveablesFromScene() => GameObject.FindObjectsOfType<Saveable>(true);
 
 		static void OnSceneLoaded(Scene scene, LoadSceneMode _)
@@ -119,8 +118,10 @@ namespace InsaneOne.SaveSystem
 		{
 			var prefabSaveables = GetSaveablesFromScene();
 			foreach (var saveable in prefabSaveables)
+			{
 				if (!saveable.IsSceneObject)
 					GameObject.Destroy(saveable.gameObject);
+			}
 		}
 	}
 }

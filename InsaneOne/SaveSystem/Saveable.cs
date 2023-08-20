@@ -33,7 +33,7 @@ namespace InsaneOne.SaveSystem
 		public int SceneUniqueId => SceneSaveHolder.Get().GetSaveableSceneId(this);
 		public bool IsSceneObject => isSceneObject;
 
-		/// <summary> Serialize data to DTO and return it in this method. </summary>
+		/// <summary> Pack data, which you want to save, to DTO and return it in this method. </summary>
 		public abstract object GetSaveData();
 		public abstract void LoadSaveData(object data);
 
