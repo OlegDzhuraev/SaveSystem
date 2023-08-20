@@ -38,13 +38,13 @@ WorldSaver.Load(save); // will load scene state from this save.
 ```
 
 ### Scene objects
-If you have objects on scene, which should be saved, you need check Is Scene Object toggle in the Saveable component.
+If you have objects on scene which should be saved and **will not** be spawned as prefab, you need check **Is Scene Objec**t toggle in the **Saveable** component. These objects will not be placed in the **Save System Data**, since they don't need prefab hash.
 
-After you're placed all your objects on scene, use **Save System Tool** from the top-menu.
+Now, all is ready to be saved. Only one step is left:
 
-Here you need to click **Update scene Saveables IDs** button.
+After you're placed all your objects on scene, use **Save System Tool** from the top-menu. Here you need to click **Update scene Saveables IDs** button.
 
-In current version, you need to do it every time you add/remove objects with Saveable component on scene.
+In current version, you need to do it **every time you add/remove objects** with **Saveable** component on scene. Prefer to do it when your scene is ready and will be rarely changed in future.
 
 ## License
 Apache License, Version 2.0
