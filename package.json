@@ -1,0 +1,21 @@
+{
+    "name": "com.insaneone.savesystem",
+    "author": "Oleg Dzhuraev (InsaneOne)",
+    "displayName": "InsaneOne Save System",
+    "description": "World state save system Apache for Unity engine. Apache License, Version 2.0.",
+    "unity": "2022.1",
+    "version": "0.0.1",
+    "keywords": [
+        "insaneone",
+        "insaneone save system",
+        "unity extensions",
+        "save"
+    ],
+    "dependencies": {
+        "com.unity.nuget.newtonsoft-json": "3.0.1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/OlegDzhuraev/SaveSystem.git"
+    }
+}

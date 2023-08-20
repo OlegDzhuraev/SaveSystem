@@ -1,0 +1,16 @@
+{
+    "name": "InsaneOne.SaveSystem",
+    "rootNamespace": "",
+    "references": [
+        "GUID:8d1514f0407c35f4ab8ed47a444b5e60"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
