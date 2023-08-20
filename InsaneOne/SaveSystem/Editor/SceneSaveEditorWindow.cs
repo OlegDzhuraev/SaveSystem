@@ -60,9 +60,9 @@ namespace InsaneOne.SaveSystem.Dev
 				}
 				else
 				{
-					EditorGUILayout.HelpBox("No Save Behaviour on scene! Save system will not work. Create?", MessageType.Warning);
+					EditorGUILayout.HelpBox($"No {nameof(SceneSaveHolder)} found on scene! Save system will not work. Create?", MessageType.Warning);
 
-					if (GUILayout.Button("Create Save Behaviour"))
+					if (GUILayout.Button($"Create {nameof(SceneSaveHolder)}"))
 						saveHolder = SceneSaveHolder.Get();
 				}
 
@@ -106,7 +106,7 @@ namespace InsaneOne.SaveSystem.Dev
 				EditorGUILayout.HelpBox($"Scene check result:\n{sceneSetupCheckResult}", msgType);
 			}
 
-			if (GUILayout.Button("Set scene ids"))
+			if (GUILayout.Button("Update scene Saveables IDs"))
 				MarkSceneSaveables();
 		}
 
